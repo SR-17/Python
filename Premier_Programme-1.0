@@ -1,0 +1,7 @@
+# Sert à afficher le hello world grace a print()
+def affiche_moi_hello():
+	print("Hello world !");
+# Directive de base : Annonce à python que le mini mini mini programme commence la. Il nest pass
+# interessent à ce niveau d'utilisation mais indispensable sur de vrai projets.
+if __name__ == '__main__':
+	affiche_moi_hello();
