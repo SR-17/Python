@@ -1,4 +1,4 @@
-# Fonction qui sert à calculer
+# Fonction qui sert a calculer
 
 def calcul_moi(m1,m2,x,constante_gravitation):
 	resultat = constante_gravitation * (m1*m2)/(x)**2
@@ -8,12 +8,17 @@ def donne_moi():
 	x = int(input('Quel valeur 1 ?'))
 	x_voulu = int(input('Quel valeur 2 ?'))
 	return x,x_voulu
+# Fonction affichage
+# ==> output
+def affichage(x,resultat):
+	print 'F', x , 'fait ', resultat
 # Fonction qui boucle tant qu on a pas ce qu on recherche
 # cest a dire la valeur de x_voulu
 def boucle(x,x_voulu,m1,m2,constante_gravitation):
 	while x < x_voulu:
+		print('flag boucle while')
 		resultat = calcul_moi(m1,m2,x,constante_gravitation);
-		print('F de ', x , 'fait ', resultat)
+		affichage(x,resultat)
 		x = x*2
 # Directive de debut
 if __name__ == '__main__':
